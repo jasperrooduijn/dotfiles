@@ -1,0 +1,14 @@
+#Export the bin folders to the path
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+#Export the script folders to the path
+export PATH=~/scripts:$PATH
+
+#Export the composer folders to the path
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+#Export the sbin folders to the path
+export PATH="/usr/local/sbin:$PATH"
+
+#Export the PHP version the PATH
+#export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
