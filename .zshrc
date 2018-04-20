@@ -48,7 +48,3 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Load the correct path for Node Version Manager
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh # This loads nvm
-
-# Load the correct path to Jenkins CI
-export JENKINS_URL=https://jasperrooduijn:bm6VUstI0E1VNv@ci.rodesk.nl
-
