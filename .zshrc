@@ -1,8 +1,8 @@
 # Load the shell dotfiles
 # * ~/.aliases can be used to extend aliases.
 # * ~/.path can be used to extend `$PATH`.
-
-for file in ~/.{aliases,path}; do
+# * ~/.extra can be used to stash provate data (logins eg). Ignored by GIT
+for file in ~/.{aliases,path,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
