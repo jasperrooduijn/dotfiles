@@ -9,6 +9,9 @@
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Sketchtool
+alias sketchtool="/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool"
+
 # Custom aliasses for user 'jasperrooduijn'
 alias ssh-ci="ssh rodesk@build01.rodesk.prd.livebytes.org"
 alias ssh-rodesk="ssh admin@rodeskstudio.nl"
@@ -35,6 +38,7 @@ alias edit-httpd="subl /usr/local/etc/httpd/httpd.conf"
 alias edit-php="cd /usr/local/etc/php/"
 
 alias gpp="git pull && git push"
+alias flush-dns = "sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
