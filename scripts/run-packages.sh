@@ -1,15 +1,14 @@
 #!/bin/bash -e
 
 ##
-# Run the packages scripts on packages.rodeskstudio.com to update satis
+# Run the packages scripts on composer.rodeskpackages.nl to update satis
 #
 
 # Start
-echo "#### ROKIT FOLDER RIGHTS: SSH into the Rodeskstudio packages server... ####"
-echo "#### ROKIT FOLDER RIGHTS: Run the SU command to get sudo rights... ####"
-echo "#### ROKIT FOLDER RIGHTS: Run the Satis update script... ####"
+echo "#### SSH into the Rodesk packages server... ####"
+echo "#### Run the Satis update script... ####"
 
-ssh -t admin@rodeskstudio.nl "cd ../../scripts; sudo bash update-satis.sh;"
+ssh rodesk@178.62.202.239 "cd /var/www/composer.rodeskpackages.nl/public_html; satis/bin/satis build satis.json /var/www/composer.rodeskpackages.nl/public_html;"
 
 # Finalize
-echo "#### ROKIT ROKIT FOLDER RIGHTS: Done finished updating. ####"
+echo "#### Done. finished updating. ####"
