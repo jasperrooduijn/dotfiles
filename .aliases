@@ -36,9 +36,15 @@ alias httpdconf="apachectl -V | grep httpd.conf"
 alias phpconf="cd /usr/local/etc/php/"
 alias edit-httpd="subl /usr/local/etc/httpd/httpd.conf"
 alias edit-php="cd /usr/local/etc/php/"
+alias go-theme='cd web/app/themes/${PWD##*/}'
 
 alias gpp="git pull && git push"
-alias flush-dns = "sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say"
+alias flush-dns="sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say"
+
+alias homestead-reload="homestead halt && homestead up --provision"
+alias homestead-provision="homestead up --provision"
+
+alias composer-list="composer show -i"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
