@@ -44,6 +44,9 @@ brew instal mailhog
 echo "Run mailhog on startup/reboot"
 brew services start mailhog
 
+echo "Installing multitail"
+brew install multitail
+
 # Install Laravel Valet-Plus
 # https://github.com/weprovide/valet-plus
 # brew install php70 --with-homebrew-curl
